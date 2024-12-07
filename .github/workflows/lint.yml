@@ -18,7 +18,7 @@ jobs:
           python-version: "3.x"
       - uses: tox-dev/action-pre-commit-uv@v1
         with:
-          extra_args: --verbose
+          extra_args: --verbose --all-files
 
   mypy:
     runs-on: ubuntu-latest
